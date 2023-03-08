@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+:root{
+  --background-color: #D91110;
+	--blue-color: #385AA7;
+	--correct-color: #A5D6A7;
+	--correct-active-color: #1B5E20;
+	--incorrect-color: #EF9A9A;
+	--incorrect-active-color: #B71C1C;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, button {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+}
+
+.d-flex{
+	display: flex;
+}
+.items-center{
+	align-items: center;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.text-white{
+  color: white;
+}
+
+.page-container{
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+.col{
+  padding: 16px;
+  width: 50%;
+}
+
+.logo{
+  max-width: 400px;
+}
+
+.logo-mobile{
+	display: none;
+	width: 80%;
+}
+
+@media screen and (max-width: 769px) {
+  .col{
+    width: 100%;
+		min-height: 50vh;
+  }
+  .page-container{
+    flex-direction: column;
+  }
+	.logo{
+		display: none;
+	}
+	.logo-mobile{
+		display: block;
+	}
+	.picture-container{
+		flex-direction: column;
+	}
+	.pokemon-container{
+		margin: 32px 0;
+	}
+	.pokemon-options{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 32px;
+	}
+}

@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonPage Component debe de hacer match con el snapshot 1`] = `
+<div class="page-container d-flex">
+  <div class="col pokemon-img d-flex items-center justify-center">
+    <h2>Espere, por favor...</h2>
+  </div>
+  <!--v-if-->
+</div>
+<!-- <h2 v-if="!pokemon">Espere por favor...</h2>
+  <div v-else>
+    <img class="logo" src="@/assets/quien-es-ese-pokemon.webp" alt="¿Quién es ese Pokemon?">
+    <PokemonPicture :pokemon-id="pokemon.id" :show-pokemon="showPokemon" />
+    <PokemonOptions :pokemons="pokemonArr" @selection-pokemon="checkAnswer" :status-option="status" />
+    <template v-if="showAnswer">
+      <h2 class="fade-in">{{ message }}</h2>
+      <button class="btn-newGame" @click="newGame">Nuevo Juego</button>
+    </template>
+  </div> -->
+`;
+
+exports[`PokemonPage Component debe de hacer match con el snapshot cuando cargan los pokemons 1`] = `
+<div class="page-container d-flex">
+  <div class="col pokemon-img d-flex items-center justify-center">
+    <div class="d-flex items-center justify-center picture-container"><img class="logo-mobile" src="" alt="¿Quién es ese Pokemon?">
+      <pokemon-picture-stub pokemonid="5" showpokemon="false"></pokemon-picture-stub>
+    </div>
+  </div>
+  <div class="col pokemon-options bg-red"><img class="logo" src="" alt="¿Quién es ese Pokemon?">
+    <pokemon-options-stub pokemons="[object Object],[object Object],[object Object],[object Object]" statusoption="false" pokemonid="5"></pokemon-options-stub>
+    <!--v-if-->
+  </div>
+</div>
+<!-- <h2 v-if="!pokemon">Espere por favor...</h2>
+  <div v-else>
+    <img class="logo" src="@/assets/quien-es-ese-pokemon.webp" alt="¿Quién es ese Pokemon?">
+    <PokemonPicture :pokemon-id="pokemon.id" :show-pokemon="showPokemon" />
+    <PokemonOptions :pokemons="pokemonArr" @selection-pokemon="checkAnswer" :status-option="status" />
+    <template v-if="showAnswer">
+      <h2 class="fade-in">{{ message }}</h2>
+      <button class="btn-newGame" @click="newGame">Nuevo Juego</button>
+    </template>
+  </div> -->
+`;
